@@ -1,0 +1,37 @@
+{
+  "camera": {
+    "width": 640,
+    "height": 480,
+    "fps": 60
+  },
+  "tuning": {
+    "exposure": 1,
+    "hue_low": 35,
+    "hue_high": 84,
+    "saturation_low": 65,
+    "saturation_high": 255,
+    "brightness_low": 54,
+    "brightness_high": 255
+  },
+  "pid": {
+    "x": {
+      "kp": 1.33,
+      "ki": 0.0,
+      "kd": 0.0,
+      "target": 0.0
+    },
+    "y": {
+      "kp": 1.04,
+      "ki": 0.0,
+      "kd": 0.0,
+      "target": -0.02
+    }
+  },
+  "hardware": {
+    "arduino_port": "/dev/ttyACM0",
+    "steering_center": 1500,
+    "steering_range": 270,
+    "throttle_idle": 1500,
+    "throttle_max": 1700
+  }
+}

@@ -1,0 +1,337 @@
+2026-04-30 03:21:09.702 Uvicorn server started on 0.0.0.0:8501
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.86.34:8501
+
+[0:14:00.382746254] [6108]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0+rpt20260205
+[0:14:00.393537474] [6115]  INFO RPI pisp.cpp:720 libpisp version v1.4.0 23-03-2026 (13:29:05)
+[0:14:00.402384593] [6115]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx708.json
+[0:14:00.410876765] [6115]  INFO Camera camera_manager.cpp:223 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a' for pipeline handler rpi/pisp
+[0:14:00.410933172] [6115]  INFO RPI pisp.cpp:1181 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a to CFE device /dev/media1 and ISP device /dev/media0 using PiSP variant BCM2712_C0
+[0:14:00.415422343] [6108]  INFO Camera camera.cpp:1215 configuring streams: (0) 640x480-RGB888/sRGB (1) 1536x864-BGGR_PISP_COMP1/RAW
+[0:14:00.415585529] [6115]  INFO RPI pisp.cpp:1485 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10/RAW - Selected CFE format: 1536x864-PC1B/RAW
+ * Serving Flask app 'robot.stream'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.86.34:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [30/Apr/2026 03:21:15] "GET /stream/raw HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 03:21:15] "GET /stream/hsv HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 03:21:15] "GET /stream/mask HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 03:21:15] "GET /stream/detection HTTP/1.1" 200 -
+  Stopping...
+  Stopping...
+2026-04-30 03:23:34.936 Uvicorn server started on 0.0.0.0:8501
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.86.34:8501
+
+[0:16:25.193084907] [6488]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0+rpt20260205
+[0:16:25.202559501] [6495]  INFO RPI pisp.cpp:720 libpisp version v1.4.0 23-03-2026 (13:29:05)
+[0:16:25.211520370] [6495]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx708.json
+[0:16:25.219731977] [6495]  INFO Camera camera_manager.cpp:223 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a' for pipeline handler rpi/pisp
+[0:16:25.219785533] [6495]  INFO RPI pisp.cpp:1181 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a to CFE device /dev/media1 and ISP device /dev/media0 using PiSP variant BCM2712_C0
+[0:16:25.224399237] [6488]  INFO Camera camera.cpp:1215 configuring streams: (0) 640x480-RGB888/sRGB (1) 1536x864-BGGR_PISP_COMP1/RAW
+[0:16:25.224570719] [6495]  INFO RPI pisp.cpp:1485 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10/RAW - Selected CFE format: 1536x864-PC1B/RAW
+ * Serving Flask app 'robot.stream'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.86.34:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [30/Apr/2026 03:23:41] "GET /stream/mask HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 03:23:41] "GET /stream/raw HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 03:23:41] "GET /stream/hsv HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 03:23:41] "GET /stream/detection HTTP/1.1" 200 -
+  Stopping...
+terminate called without an active exception
+2026-04-30 03:56:55.357 Uvicorn server started on 0.0.0.0:8501
+2026-04-30 03:56:55.443 Did not auto detect external IP.
+Please go to https://docs.streamlit.io/ for debugging hints.
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://127.0.0.1:8501
+
+[0:07:10.839040673] [3309]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0+rpt20260205
+[0:07:10.848703536] [3318]  INFO RPI pisp.cpp:720 libpisp version v1.4.0 23-03-2026 (13:29:05)
+[0:07:10.857593192] [3318]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx708.json
+[0:07:10.870330922] [3318]  INFO Camera camera_manager.cpp:223 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a' for pipeline handler rpi/pisp
+[0:07:10.870514867] [3318]  INFO RPI pisp.cpp:1181 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a to CFE device /dev/media2 and ISP device /dev/media1 using PiSP variant BCM2712_C0
+[0:07:10.875194983] [3309]  INFO Camera camera.cpp:1215 configuring streams: (0) 640x480-RGB888/sRGB (1) 1536x864-BGGR_PISP_COMP1/RAW
+[0:07:10.875448170] [3318]  INFO RPI pisp.cpp:1485 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10/RAW - Selected CFE format: 1536x864-PC1B/RAW
+ * Serving Flask app 'robot.stream'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.86.34:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [30/Apr/2026 04:06:51] "GET /stream/mask HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 04:06:51] "GET /stream/detection HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 04:06:51] "GET /stream/hsv HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 04:06:51] "GET /stream/raw HTTP/1.1" 200 -
+Failed to send command: write failed: [Errno 5] Input/output error
+2026-04-30 04:20:20.706 Port 8501 is not available
+2026-04-30 04:20:44.301 Port 8501 is not available
+2026-04-30 04:21:39.968 Uvicorn server started on 0.0.0.0:8501
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.86.34:8501
+
+[0:22:04.442388233] [5174]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0+rpt20260205
+[0:22:04.451811295] [5191]  INFO RPI pisp.cpp:720 libpisp version v1.4.0 23-03-2026 (13:29:05)
+[0:22:04.460862766] [5191]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx708.json
+[0:22:04.469085351] [5191]  INFO Camera camera_manager.cpp:223 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a' for pipeline handler rpi/pisp
+[0:22:04.469143443] [5191]  INFO RPI pisp.cpp:1181 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a to CFE device /dev/media2 and ISP device /dev/media1 using PiSP variant BCM2712_C0
+[0:22:04.477216195] [5174]  INFO Camera camera.cpp:1215 configuring streams: (0) 640x480-RGB888/sRGB (1) 1536x864-BGGR_PISP_COMP1/RAW
+[0:22:04.477387657] [5191]  INFO RPI pisp.cpp:1485 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10/RAW - Selected CFE format: 1536x864-PC1B/RAW
+ * Serving Flask app 'robot.stream'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.86.34:5000
+[33mPress CTRL+C to quit[0m
+Failed to connect to Arduino: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+127.0.0.1 - - [30/Apr/2026 04:21:43] "GET /stream/hsv HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 04:21:43] "GET /stream/mask HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 04:21:43] "GET /stream/detection HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 04:21:43] "GET /stream/raw HTTP/1.1" 200 -
+  Stopping...
+terminate called without an active exception
+2026-04-30 04:22:03.148 Uvicorn server started on 0.0.0.0:8501
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.86.34:8501
+
+[0:22:28.209904668] [5595]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0+rpt20260205
+[0:22:28.220532843] [5604]  INFO RPI pisp.cpp:720 libpisp version v1.4.0 23-03-2026 (13:29:05)
+[0:22:28.230094540] [5604]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx708.json
+[0:22:28.242444117] [5604]  INFO Camera camera_manager.cpp:223 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a' for pipeline handler rpi/pisp
+[0:22:28.242499302] [5604]  INFO RPI pisp.cpp:1181 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a to CFE device /dev/media2 and ISP device /dev/media1 using PiSP variant BCM2712_C0
+[0:22:28.246737495] [5595]  INFO Camera camera.cpp:1215 configuring streams: (0) 640x480-RGB888/sRGB (1) 1536x864-BGGR_PISP_COMP1/RAW
+[0:22:28.246914105] [5604]  INFO RPI pisp.cpp:1485 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10/RAW - Selected CFE format: 1536x864-PC1B/RAW
+ * Serving Flask app 'robot.stream'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.86.34:5000
+[33mPress CTRL+C to quit[0m
+Failed to connect to Arduino: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+127.0.0.1 - - [30/Apr/2026 04:22:06] "GET /stream/hsv HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 04:22:06] "GET /stream/raw HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 04:22:06] "GET /stream/mask HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 04:22:06] "GET /stream/detection HTTP/1.1" 200 -
+2026-04-30 04:22:43.198 The fragment with id 1aaa2ff6fbe03503a365202218c6f50c does not exist anymore - it might have been removed during a preceding full-app rerun.
+  Stopping...
+terminate called without an active exception
+2026-04-30 04:22:52.980 Uvicorn server started on 0.0.0.0:8501
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.86.34:8501
+
+[0:23:17.935900320] [6160]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0+rpt20260205
+[0:23:17.946207469] [6167]  INFO RPI pisp.cpp:720 libpisp version v1.4.0 23-03-2026 (13:29:05)
+[0:23:17.957329949] [6167]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx708.json
+[0:23:17.969628149] [6167]  INFO Camera camera_manager.cpp:223 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a' for pipeline handler rpi/pisp
+[0:23:17.969784557] [6167]  INFO RPI pisp.cpp:1181 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a to CFE device /dev/media2 and ISP device /dev/media1 using PiSP variant BCM2712_C0
+[0:23:17.976654693] [6160]  INFO Camera camera.cpp:1215 configuring streams: (0) 640x480-RGB888/sRGB (1) 1536x864-BGGR_PISP_COMP1/RAW
+[0:23:17.977249228] [6167]  INFO RPI pisp.cpp:1485 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10/RAW - Selected CFE format: 1536x864-PC1B/RAW
+ * Serving Flask app 'robot.stream'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.86.34:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [30/Apr/2026 04:22:58] "GET /stream/raw HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 04:22:58] "GET /stream/mask HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 04:22:58] "GET /stream/detection HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2026 04:22:58] "GET /stream/hsv HTTP/1.1" 200 -
+Failed to send command: write failed: [Errno 5] Input/output error
+                                                                                                                                                                                                                                                                                                                       2026-04-30 04:21:53.261 Uvicorn server started on 0.0.0.0:8501
+2026-04-30 04:21:53.334 Did not auto detect external IP.
+Please go to https://docs.streamlit.io/ for debugging hints.
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://127.0.0.1:8501
+
+[0:01:40.135698235] [1584]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0+rpt20260205
+[0:01:40.144561198] [1591]  INFO RPI pisp.cpp:720 libpisp version v1.4.0 23-03-2026 (13:29:05)
+[0:01:40.152556920] [1591]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx708.json
+[0:01:40.159722976] [1591]  INFO Camera camera_manager.cpp:223 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a' for pipeline handler rpi/pisp
+[0:01:40.159760994] [1591]  INFO RPI pisp.cpp:1181 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a to CFE device /dev/media0 and ISP device /dev/media2 using PiSP variant BCM2712_C0
+[0:01:40.162895272] [1584]  INFO Camera camera.cpp:1215 configuring streams: (0) 640x480-RGB888/sRGB (1) 1536x864-BGGR_PISP_COMP1/RAW
+[0:01:40.163002105] [1591]  INFO RPI pisp.cpp:1485 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10/RAW - Selected CFE format: 1536x864-PC1B/RAW
+ * Serving Flask app 'robot.stream'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.86.101:5000
+[33mPress CTRL+C to quit[0m
+Failed to connect to Arduino: [Errno 2] could not open port /dev/ttyACM1: [Errno 2] No such file or directory: '/dev/ttyACM1'
+192.168.86.100 - - [30/Apr/2026 04:23:54] "[33mGET / HTTP/1.1[0m" 404 -
+Failed to send command: write failed: [Errno 5] Input/output error
+2026-04-30 04:21:54.239 Uvicorn server started on 0.0.0.0:8501
+2026-04-30 04:21:54.333 Did not auto detect external IP.
+Please go to https://docs.streamlit.io/ for debugging hints.
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://127.0.0.1:8501
+
+[0:04:36.994102147] [1615]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0+rpt20260205
+[0:04:37.002993870] [1622]  INFO RPI pisp.cpp:720 libpisp version v1.4.0 23-03-2026 (13:29:05)
+[0:04:37.010905759] [1622]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx708.json
+[0:04:37.018046907] [1622]  INFO Camera camera_manager.cpp:223 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a' for pipeline handler rpi/pisp
+[0:04:37.018085462] [1622]  INFO RPI pisp.cpp:1181 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a to CFE device /dev/media0 and ISP device /dev/media1 using PiSP variant BCM2712_C0
+[0:04:37.021467184] [1615]  INFO Camera camera.cpp:1215 configuring streams: (0) 640x480-RGB888/sRGB (1) 1536x864-BGGR_PISP_COMP1/RAW
+[0:04:37.021583073] [1622]  INFO RPI pisp.cpp:1485 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10/RAW - Selected CFE format: 1536x864-PC1B/RAW
+ * Serving Flask app 'robot.stream'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.86.101:5000
+[33mPress CTRL+C to quit[0m
+2026-04-30 04:59:36.289 Uvicorn server started on 0.0.0.0:8501
+2026-04-30 04:59:36.363 Did not auto detect external IP.
+Please go to https://docs.streamlit.io/ for debugging hints.
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://127.0.0.1:8501
+
+[0:00:13.110520102] [1533]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0+rpt20260205
+[0:00:13.119359787] [1540]  INFO RPI pisp.cpp:720 libpisp version v1.4.0 23-03-2026 (13:29:05)
+[0:00:13.127242120] [1540]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx708.json
+[0:00:13.134394954] [1540]  INFO Camera camera_manager.cpp:223 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a' for pipeline handler rpi/pisp
+[0:00:13.134432842] [1540]  INFO RPI pisp.cpp:1181 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a to CFE device /dev/media3 and ISP device /dev/media0 using PiSP variant BCM2712_C0
+[0:00:13.137497935] [1533]  INFO Camera camera.cpp:1215 configuring streams: (0) 640x480-RGB888/sRGB (1) 1536x864-BGGR_PISP_COMP1/RAW
+[0:00:13.137610954] [1540]  INFO RPI pisp.cpp:1485 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10/RAW - Selected CFE format: 1536x864-PC1B/RAW
+ * Serving Flask app 'robot.stream'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.86.34:5000
+[33mPress CTRL+C to quit[0m
+192.168.86.22 - - [30/Apr/2026 05:02:31] "GET /stream/mask HTTP/1.1" 200 -
+192.168.86.22 - - [30/Apr/2026 05:02:31] "GET /stream/raw HTTP/1.1" 200 -
+192.168.86.22 - - [30/Apr/2026 05:02:31] "GET /stream/detection HTTP/1.1" 200 -
+192.168.86.22 - - [30/Apr/2026 05:02:31] "GET /stream/hsv HTTP/1.1" 200 -
+192.168.86.22 - - [30/Apr/2026 05:26:54] "GET /stream/raw HTTP/1.1" 200 -
+192.168.86.22 - - [30/Apr/2026 05:26:54] "GET /stream/mask HTTP/1.1" 200 -
+192.168.86.22 - - [30/Apr/2026 05:26:54] "GET /stream/detection HTTP/1.1" 200 -
+192.168.86.22 - - [30/Apr/2026 05:26:54] "GET /stream/hsv HTTP/1.1" 200 -
+2026-04-30 05:37:48.823 Uvicorn server started on 0.0.0.0:8501
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.86.34:8501
+  External URL: http://136.47.221.191:8501
+
+2026-04-30 05:37:50.617 The fragment with id 98e27d8d474444b7a4f25ca7de0aa560 does not exist anymore - it might have been removed during a preceding full-app rerun.
+[0:37:56.635174608] [8292]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0+rpt20260205
+[0:37:56.644118937] [8299]  INFO RPI pisp.cpp:720 libpisp version v1.4.0 23-03-2026 (13:29:05)
+[0:37:56.652068165] [8299]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx708.json
+[0:37:56.659201443] [8299]  INFO Camera camera_manager.cpp:223 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a' for pipeline handler rpi/pisp
+[0:37:56.659239795] [8299]  INFO RPI pisp.cpp:1181 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a to CFE device /dev/media3 and ISP device /dev/media0 using PiSP variant BCM2712_C0
+[0:37:56.662382171] [8292]  INFO Camera camera.cpp:1215 configuring streams: (0) 640x480-RGB888/sRGB (1) 1536x864-BGGR_PISP_COMP1/RAW
+[0:37:56.662490987] [8299]  INFO RPI pisp.cpp:1485 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10/RAW - Selected CFE format: 1536x864-PC1B/RAW
+ * Serving Flask app 'robot.stream'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.86.34:5000
+[33mPress CTRL+C to quit[0m
+192.168.86.22 - - [30/Apr/2026 05:37:54] "GET /stream/raw HTTP/1.1" 200 -
+192.168.86.22 - - [30/Apr/2026 05:37:54] "GET /stream/mask HTTP/1.1" 200 -
+192.168.86.22 - - [30/Apr/2026 05:37:54] "GET /stream/detection HTTP/1.1" 200 -
+192.168.86.22 - - [30/Apr/2026 05:37:54] "GET /stream/hsv HTTP/1.1" 200 -
+2026-04-30 05:38:46.128 Uvicorn server started on 0.0.0.0:8501
+2026-04-30 05:38:46.214 Did not auto detect external IP.
+Please go to https://docs.streamlit.io/ for debugging hints.
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://127.0.0.1:8501
+
+2026-04-30 05:38:46.964 Uvicorn server started on 0.0.0.0:8501
+2026-04-30 05:38:47.058 Did not auto detect external IP.
+Please go to https://docs.streamlit.io/ for debugging hints.
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://127.0.0.1:8501
+
+[0:03:24.605142358] [1698]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0+rpt20260205
+[0:03:24.614007543] [1705]  INFO RPI pisp.cpp:720 libpisp version v1.4.0 23-03-2026 (13:29:05)
+[0:03:24.622001006] [1705]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx708.json
+[0:03:24.629197062] [1705]  INFO Camera camera_manager.cpp:223 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a' for pipeline handler rpi/pisp
+[0:03:24.629235543] [1705]  INFO RPI pisp.cpp:1181 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a to CFE device /dev/media0 and ISP device /dev/media2 using PiSP variant BCM2712_C0
+[0:03:24.632358895] [1698]  INFO Camera camera.cpp:1215 configuring streams: (0) 640x480-RGB888/sRGB (1) 1536x864-BGGR_PISP_COMP1/RAW
+[0:03:24.632462691] [1705]  INFO RPI pisp.cpp:1485 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10/RAW - Selected CFE format: 1536x864-PC1B/RAW
+ * Serving Flask app 'robot.stream'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.86.101:5000
+[33mPress CTRL+C to quit[0m
+192.168.86.100 - - [30/Apr/2026 05:42:08] "GET /stream/detection HTTP/1.1" 200 -
+192.168.86.100 - - [30/Apr/2026 05:42:08] "GET /stream/raw HTTP/1.1" 200 -
+192.168.86.100 - - [30/Apr/2026 05:42:08] "GET /stream/hsv HTTP/1.1" 200 -
+192.168.86.100 - - [30/Apr/2026 05:42:08] "GET /stream/mask HTTP/1.1" 200 -
+2026-04-30 05:43:48.654 Uvicorn server started on 0.0.0.0:8501
+2026-04-30 05:43:48.732 Did not auto detect external IP.
+Please go to https://docs.streamlit.io/ for debugging hints.
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://127.0.0.1:8501
+
+[0:04:12.037277737] [1639]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0+rpt20260205
+[0:04:12.046410589] [1663]  INFO RPI pisp.cpp:720 libpisp version v1.4.0 23-03-2026 (13:29:05)
+[0:04:12.054705107] [1663]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/pisp/imx708.json
+[0:04:12.062116052] [1663]  INFO Camera camera_manager.cpp:223 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a' for pipeline handler rpi/pisp
+[0:04:12.062161126] [1663]  INFO RPI pisp.cpp:1181 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a to CFE device /dev/media3 and ISP device /dev/media0 using PiSP variant BCM2712_C0
+[0:04:12.065941200] [1639]  INFO Camera camera.cpp:1215 configuring streams: (0) 640x480-RGB888/sRGB (1) 1536x864-BGGR_PISP_COMP1/RAW
+[0:04:12.066071959] [1663]  INFO RPI pisp.cpp:1485 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10/RAW - Selected CFE format: 1536x864-PC1B/RAW
+ * Serving Flask app 'robot.stream'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.86.101:5000
+[33mPress CTRL+C to quit[0m
+192.168.86.100 - - [30/Apr/2026 05:47:59] "GET /stream/raw HTTP/1.1" 200 -
+192.168.86.100 - - [30/Apr/2026 05:47:59] "GET /stream/mask HTTP/1.1" 200 -
+192.168.86.100 - - [30/Apr/2026 05:47:59] "GET /stream/hsv HTTP/1.1" 200 -
+192.168.86.100 - - [30/Apr/2026 05:47:59] "GET /stream/detection HTTP/1.1" 200 -

@@ -1,0 +1,5 @@
+{
+    "sketch": "robot/arduino_controller/arduino_controller.ino",
+    "port": "/dev/ttyACM0",
+    "board": "arduino:avr:uno"
+}

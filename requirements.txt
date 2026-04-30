@@ -1,0 +1,13 @@
+# This file lists the dependencies for the RC Cat project. To install these dependencies, use the following command in your terminal:
+# pip install -r requirements.txt
+
+# Global
+streamlit
+
+# For rpi vision
+opencv-python
+numpy
+picamera2
+
+# For Arduino hardware control
+pyserial

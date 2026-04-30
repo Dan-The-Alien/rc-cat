@@ -1,0 +1,16 @@
+[Unit]
+Description=rc-cat Streamlit app
+After=network.target
+
+[Service]
+Type=simple
+# Set the user to run the service. Change if different.
+User=cat
+WorkingDirectory=/home/cat/rc-cat
+ExecStart=/home/cat/rc-cat/run.sh
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
