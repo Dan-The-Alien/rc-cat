@@ -175,6 +175,7 @@ class ControlSnapshot:
     setpoint_x: float = 0.0
     setpoint_y: float = 0.0
     has_lock: bool = False
+    throttle_enabled: bool = False
     arduino_connected: bool = False
     control_hz: float = 0.0
     processing_fps: float = 0.0
@@ -215,8 +216,10 @@ def control_loop(
         throttle_output = (-pid_y.last_output / 2.0) + 0.5
         throttle_output = max(0.0, min(1.0, throttle_output))
         has_lock = latest_position is not None
+        throttle_enabled = True
 
         with control_lock:
+            throttle_enabled = snapshot.throttle_enabled
             if latest_position is not None:
                 pid_result_x = pid_x.step(latest_position.x, dt)
                 pid_result_y = pid_y.step(latest_position.y, dt)
@@ -240,6 +243,10 @@ def control_loop(
                 snapshot.setpoint_y = throttle_output
                 snapshot.has_lock = False
 
+            if not throttle_enabled:
+                throttle_output = 0.0
+                snapshot.setpoint_y = throttle_output
+
             rate_window_count += 1
             elapsed = tick_start - rate_window_start
             if elapsed >= 0.5:
@@ -251,6 +258,9 @@ def control_loop(
         if arduino.connected:
             # Safety: if we have not had a lock for over 0.5s, force throttle to 0
             if (tick_start - last_lock_time) > 0.5:
+                throttle_output = 0.0
+                snapshot.setpoint_y = throttle_output
+            if not throttle_enabled:
                 throttle_output = 0.0
                 snapshot.setpoint_y = throttle_output
             arduino.set_steering(steering_output)
@@ -284,6 +294,7 @@ if "control_lock" not in st.session_state:
 
 if "control_snapshot" not in st.session_state:
     st.session_state.control_snapshot = ControlSnapshot()
+    st.session_state.control_snapshot.throttle_enabled = False
 
 if "arduino" not in st.session_state:
     arduino_config = st.session_state.config.get("hardware", {})
@@ -314,6 +325,9 @@ tracker = st.session_state.tracker
 config = st.session_state.config
 pid_x = st.session_state.pid_x
 pid_y = st.session_state.pid_y
+
+with st.session_state.control_lock:
+    throttle_enabled = st.session_state.control_snapshot.throttle_enabled
 
 # Sidebar controls
 with st.sidebar:
@@ -392,6 +406,25 @@ with st.sidebar:
         config["tuning"]["brightness_high"],
         key="brightness_high_slider",
     )
+
+    st.divider()
+    st.header("Throttle Safety")
+    status_label = "Enabled" if throttle_enabled else "Disabled"
+    st.caption(f"Throttle output is currently {status_label}.")
+    enable_col, disable_col = st.columns(2)
+    enable_pressed = enable_col.button("Enable throttle", use_container_width=True)
+    disable_pressed = disable_col.button("Disable throttle", use_container_width=True)
+
+    if enable_pressed or disable_pressed:
+        desired_state = enable_pressed
+        with st.session_state.control_lock:
+            st.session_state.control_snapshot.throttle_enabled = desired_state
+            throttle_enabled = desired_state
+        if desired_state:
+            st.success("Throttle output enabled.")
+        else:
+            st.warning("Throttle output disabled; ESC will be held at idle.")
+            st.session_state.arduino.set_throttle(0.0)
 
     st.divider()
     st.header("PID X")
